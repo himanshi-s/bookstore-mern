@@ -2,7 +2,9 @@ import React from 'react'
 
 const Spinner = () => {
   return (
-    <div className=''>Spinner</div>
+    
+    <div className='animate-ping w-16 h-16'>Spinner</div>
+    
   )
 }
 
