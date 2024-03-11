@@ -55,7 +55,7 @@ const Home = () => {
               <td>{book.publishYear}</td>
               <td>
                 <div className="border">
-                  <Link to={`/books/details/${book._id}`}><BsInfoCircle/></Link>
+                  <Link to={`/books/${book._id}`}><BsInfoCircle/></Link>
                   <Link to={`/books/edit/${book._id}`}><AiOutlineEdit/></Link>
                   <Link to={`/books/delete/${book._id}`}><MdOutlineDelete/></Link>
                 </div>
