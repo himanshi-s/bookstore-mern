@@ -3,7 +3,7 @@ import { Book } from "../models/bookModel.js";
 const router = express.Router()
 
 //add a new book
-router.post('/', async (req,res)=>{
+router.post('/create', async (req,res)=>{
     try {
         if (!req.body.title || !req.body.author || !req.body.publishYear) {
             return res.status(400).send("send all required fields.");
