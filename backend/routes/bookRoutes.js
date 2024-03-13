@@ -69,4 +69,18 @@ router.put('/:id',async (req,res)=>{
     }
 })
 
+//delete a book
+router.delete('/delete/:id',async (req,res)=>{
+    try {
+        console.log(req.params.id);
+        const book = await Book.deleteOne({_id:req.params.id});
+        console.log(book);
+        return res.status(201).send({msg:'deleted successfuly'})
+        
+    } catch (error) {
+        console.log(error);
+    }
+
+})
+
 export default router;
